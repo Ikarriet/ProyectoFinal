@@ -72,6 +72,34 @@
                     "isPartOfComposite": true
                 }
             ]
+        },
+        {
+            "name": "Fish",
+            "id": "d948acba-6b9a-4daf-8bba-84d94abce0d5",
+            "actions": [
+                {
+                    "name": "ThrowFishing",
+                    "type": "Button",
+                    "id": "a459ed13-a2ba-40a0-b8e9-97ed038721dc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "655602e2-dee0-480f-b3c5-326245cf95f8",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ThrowFishing",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

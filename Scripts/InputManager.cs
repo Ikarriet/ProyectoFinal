@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class InputManager : MonoBehaviour
 {
     PlayerControls playerControls;
+    TirarCana tirarCana;
 
     Vector2 movementInput;
 
@@ -13,11 +14,14 @@ public class InputManager : MonoBehaviour
     public float horizontalInput;
     private void OnEnable()
     {
+        tirarCana = GetComponent<TirarCana>();
         if(playerControls == null)
         {
             playerControls = new PlayerControls();
 
             playerControls.PlayerMovement.Move.performed += i => movementInput = i.ReadValue<Vector2>();
+
+            
         }
 
         playerControls.Enable();
@@ -35,6 +39,6 @@ public class InputManager : MonoBehaviour
     private void HandleMoveInput()
     {
         verticalInput=movementInput.y;
-        horizontalInput=movementInput.x;
+        horizontalInput=movementInput.x;        
     }
 }
